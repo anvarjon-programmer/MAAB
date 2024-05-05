@@ -34,7 +34,7 @@ const Header = () => {
              <div className="navbar">
                <img className='navbar-img' src={navLogo} alt="" />
                <button className='open' onClick={toggleHamburger}> Number</button>
-               <div className='navbar-phone' style={{translate: openHamburger ? 0: "-100%"}}>
+               <div className='navbar-phone' style={{translateY: openHamburger ? 0: "-100%"}}>
                 <a href="#" className='navbar__phone--num'>+998 97 783 90 45</a>
                 <button className='navbar__phone--call'>Aloqada bo'ling <IoCall /></button>
                 <button className='close' onClick={toggleHamburger}>X</button>

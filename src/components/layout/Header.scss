@@ -2,13 +2,18 @@
   nav{
     @include fixed();
         // margin: 20px 0;
-        height: 80px;
+        height: 130px;
+
+        .network{
+
+            padding-top: 25px;
+        }
     }
     .navbar{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // margin-top: 16px;
+        margin-top: 16px;
         .open{
             display: none;
             @include btn-none();
