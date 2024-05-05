@@ -1,0 +1,14 @@
+.warper{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+
+@media(max-width:700px){
+    .warper{
+        flex-direction: column;
+        gap: 5px;
+    }
+}

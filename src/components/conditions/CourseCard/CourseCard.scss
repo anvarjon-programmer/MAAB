@@ -1,0 +1,19 @@
+.carts{
+    max-width: 388px;
+    height: 186px;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    .cart__iten{
+      padding: 19px 20px;
+      b{
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFFFFF;
+      }
+      p{
+        font-size: 16px;
+        color: #FFFFFFCC;
+        line-height: 21px;
+      }
+    }
+}

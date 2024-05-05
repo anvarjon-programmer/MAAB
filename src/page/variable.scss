@@ -1,0 +1,20 @@
+@mixin center-div{
+  display: flex;
+  align-items: center;   
+}
+
+@mixin btn-none{
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@mixin fixed{
+  background-color: #FFFFFF;
+z-index: 212;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}

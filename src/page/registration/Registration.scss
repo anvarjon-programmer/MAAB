@@ -1,0 +1,194 @@
+@import '../../page/variable.scss';
+
+.registration{
+    background-color: #F5F5F7;
+    width: 100%;
+    margin-top: 80px;
+    border-radius: 40px;
+    .registration--item{
+        .end-register{
+            @include center-div();
+            justify-content: space-between;
+            margin: 20px 0
+        }
+        .register--btn{
+            @include btn-none();
+            padding: 12px 24px 12px 24px;
+            font-size: 16px;
+            color: #FFFFFF;
+            background-color: #236BF4;
+            border-radius: 40px;
+        }
+        padding: 52px;
+        @include center-div();
+        justify-content: space-between;
+        .registration__text{
+            h3{
+                font-size: 36px;
+                font-weight: 600;
+                color: #000000;
+                max-width: 511px;
+                font-family: sans-serif;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                color: #000000;
+                margin-top: 16px;
+                font-family: sans-serif;
+            }
+        }
+        .registration__input{
+            // width: 50%;
+            @include center-div();
+            justify-content: center;
+            background-color: #FFFFFF;
+            border-radius: 40px
+
+        }
+    }
+}
+.registration__input--item{
+    padding: 40px;
+    h3{
+        font-size: 24px;
+        color: #353437;
+        margin-top: 32px;
+    }
+    form{
+        @include center-div();
+        gap: 50px;
+        margin-top: 25px;
+        .left{
+        }
+
+        .input{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input{
+                background-color: #F5F5F7;
+                border: none;
+                border-radius: 40px;
+                padding: 15px 38px;
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+
+        .input{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // max-width: 510px;
+            label{
+                font-size: 18px;
+                color: #212529;
+                margin-top: 15px;
+            }
+            select{
+                background-color: #F5F5F7;
+                border: none;
+                border-radius: 40px;
+                padding: 15px 20px;
+                font-size: 16px;
+                width: 100%;
+                outline: none;
+                option{
+                    background: none;
+                    border: none;
+                }
+            }
+        }
+        
+    }
+}
+
+.checkbox{
+    @include center-div();
+    gap: 10px;
+    max-width: 433px;
+    label{
+        font-size: 14px;
+        color: #353437;
+    }
+}
+
+
+
+@media(max-width:1500px){
+    .registration__text{
+        h3{
+            font-size: 30px;
+        }
+    }
+    .registration__input--item{
+        padding: 50px;
+    }
+}
+
+@media(max-width:1200px){
+
+    .registration--item{
+        flex-direction: column;
+    }
+    .registration__text{
+        width: 100%;
+        @include center-div();
+        flex-direction: column;
+        h3{
+            font-size: 30px;
+        }
+    }
+    .registration__input--item{
+        padding: 50px;
+    }
+    .registration__input{
+        margin-top: 150px;
+
+
+        width: 100%;
+        .registration--item{
+            padding: 10px;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .form{
+        flex-direction: column;
+    }
+    .registration{
+        .registration--item{
+            padding: 10px;
+        }
+    }
+    .end-register{
+        flex-direction: column;
+        .register--btn{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .registration{
+       .registration--item{
+         .registration__text{
+            padding: 35px;
+         }
+       } 
+    }
+}
+
+@media(max-width:600px){
+    .registration{
+       .registration--item{
+         .registration__text{
+            h3{
+                font-size: 30px;
+            }
+         }
+       } 
+    }
+}

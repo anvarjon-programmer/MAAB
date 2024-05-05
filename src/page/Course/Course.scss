@@ -1,0 +1,36 @@
+@import '../../page/variable.scss';
+.course__wraper{
+    margin-top: 150px;
+    background: rgb(1,82,238);
+    background: linear-gradient(90deg, rgba(1,82,238,1) 35%, rgba(95,149,254,1) 100%);
+    border-radius: 40px;
+    h2{
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-size: 75px;
+        text-align: center;
+        font-family: sans-serif;
+        padding-top: 77px;
+    }
+}
+.wraper{
+   
+    @include center-div();
+    justify-content: center;
+}
+.item{
+    @include center-div();
+    justify-content: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+@media(max-width:1300px){
+    .course__wraper{
+        h2{
+            font-size: 60px;
+        }
+    }
+}

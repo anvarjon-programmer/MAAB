@@ -1,0 +1,13 @@
+@import '../../page/variable.scss';
+.hero__container{
+    @include center-div();
+    justify-content: center;
+    padding: 0 25px;
+     margin-top: 140px; 
+     video{
+        height: 800px;   
+        width: 100%;
+        border-radius: 40px;
+        object-fit: cover;
+    }
+}

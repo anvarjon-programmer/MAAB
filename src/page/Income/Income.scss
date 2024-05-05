@@ -1,0 +1,174 @@
+@import '../../page//variable.scss';
+.income{
+    width: 100%;
+    background-color: #F5F5F7;
+    border-radius: 40px;
+    // height: 410px;
+    @include center-div();
+    justify-content: center;
+    margin-top: 64px;
+    .income__cards{
+        border-radius: 40px;
+        background-color: #FFFFFF;
+        max-width: 501px;
+        height: 154px;
+        @include center-div();
+        justify-content: center;
+        border: 1px solid #686868;
+        .card__item{
+            padding: 30px 60px;
+            h1{
+                color: #E26020;
+                font-size: 40px;
+                font-weight: 600;
+                font-family: sans-serif;
+                text-align: center;
+            }
+            p{
+                color: #000000CC;
+                font-size: 20px;
+                font-weight: 400;
+                font-family: sans-serif;
+                margin-top: 5px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.income__wraper--card{
+    @include center-div();
+    justify-content: center;
+    gap: 36px;
+    margin-top: 34px;
+}
+
+.income__wraper{
+    margin: 60px 0;
+    h3{
+        font-size: 40px;
+        color: #1460F2;
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:1323px){
+    .income__wraper{
+        .income__wraper--card{
+            @include center-div();
+            gap: 10px;
+             .card__item{
+                h1{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 14px;
+                }
+             }
+        }
+    }
+}
+
+
+
+
+@media(max-width:780px){
+    .income__wraper{
+        .income__wraper--card{
+            @include center-div();
+            flex-direction: column;
+            gap: 30px;
+             .card__item{
+                padding: 0 120px;
+                h1{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 20px;
+                }
+             }
+        }
+    }
+}
+
+@media(max-width:580px){
+    .income__wraper{
+        .income__wraper--card{
+            @include center-div();
+            flex-direction: column;
+            gap: 30px;
+             .card__item{
+                padding: 0 70px;
+                h1{
+                    font-size: 33px;
+                }
+                p{
+                    font-size: 18px;
+                }
+             }
+        }
+    }
+}
+
+@media(max-width:450px){
+    .income__wraper{
+        h3{
+            font-size: 28px
+        }
+        .income__wraper--card{
+            @include center-div();
+            flex-direction: column;
+            gap: 30px;
+             .card__item{
+                padding: 0 50px;
+                h1{
+                    font-size: 23px;
+                }
+                p{
+                    font-size: 12px;
+                    // max-width: 120px;
+                    text-align: center;
+                }
+             }
+        }
+    }
+}
+
+
+
+.grant{
+    width: 100%;
+    border-radius: 40px;
+    background: rgb(255,101,92);
+background: -moz-linear-gradient(90deg, rgba(255,101,92,1) 0%, rgba(253,199,151,1) 92%, rgba(252,176,69,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(255,101,92,1) 0%, rgba(253,199,151,1) 92%, rgba(252,176,69,1) 100%);
+background: linear-gradient(90deg, rgba(255,101,92,1) 0%, rgba(253,199,151,1) 92%, rgba(252,176,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff655c",endColorstr="#fcb045",GradientType=1);
+    .grant__item{
+        padding: 70px 40px;
+        &--text{
+           h3{
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 48px;
+           }
+           p{
+            font-size: 16px;
+            color: #FFFFFFCC;
+            font-weight: 400;
+            margin-top: 28px;
+            max-width: 400px;
+           }
+           button{
+            padding: 12px 60px;
+            background: none;
+            border: 1px solid #FFFFFF;
+            border-radius: 40px;
+            color: #FFFFFF;
+            font-size: 18px;
+            margin-top: 35px;
+           }
+        }
+    }
+}

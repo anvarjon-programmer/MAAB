@@ -1,0 +1,143 @@
+  @import './../../page//variable.scss';
+  nav{
+    @include fixed();
+        // margin: 20px 0;
+        height: 80px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // margin-top: 16px;
+        .open{
+            display: none;
+            @include btn-none();
+            background-color: #353437;
+            color: #FFFFFFFF;
+            padding: 10px 20px 10px 20px;
+            font-size: 16px;
+            border-radius: 30px;
+        }
+        
+            .navbar-img{
+                width: 152px;
+                object-fit: cover;
+             }
+    }
+
+   .navbar-phone{
+    @include center-div();
+    gap: 24px;
+    .close{
+        display: none;
+        @include btn-none();
+        color: #ffffff;
+        font-size: 20px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+   } 
+.navbar__phone--num{
+    font-size: 24px;
+    color: #FB5F12;
+    @include btn-none();
+}
+.navbar__phone--call{
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px 12px 24px;
+    color: #FFFFFF;
+    background-color: #353437;
+    font-size: 16px;
+    border-radius: 30px;
+}
+    
+.network{
+    @include center-div();
+    margin-left: auto;
+    justify-content: end;
+    gap: 50px;
+}
+.icons{
+    @include center-div();
+    justify-content: center;
+    gap: 23px;
+}
+.icon{
+    font-size: 20px;
+    color: #9A999B;
+}
+.select{
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+@media(max-width:600px){
+    nav{
+        .navbar{
+            display: flex;
+            gap: 35px;
+
+            .navbar-img{
+                width: 125px;
+                margin-top: -25px;
+            }
+             .navbar-phone{
+                gap: 8px;
+             }
+            .navbar__phone--num{
+                font-size: 19px;
+            }
+            .navbar__phone--call{
+                font-size: 15px;
+            }
+        }
+        }
+   
+}
+@media(max-width:540px){
+    nav{
+        .navbar{
+            .navbar-phone{
+                display: flex;
+                flex-direction: column;
+            }
+            .navbar-img{
+                margin-top: 15px;
+            }
+        }
+         
+    }
+    .network{
+        gap: 10px;
+        margin: 0 auto;
+        @include center-div();
+        justify-content: center;
+    }
+}
+
+@media(max-width:450px){
+    .navbar{
+        .open{
+            display: block;
+        }
+
+        .navbar-phone{
+            @include center-div();
+            justify-content: center;
+                flex-direction: column;
+                background-color: #9A999B;
+                width: 100%;
+                position: absolute;
+                height: 120px;
+                top: 0;
+                right: 0;
+                // transform: translateY(-100%);
+                .close{
+                    display: block;
+                }
+        }
+    }
+}
