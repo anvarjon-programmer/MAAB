@@ -22,7 +22,7 @@ function App() {
      <MaabAcademy/>
      <Asking/>
      <Registr/>
-     <Footer/>
+     {/* <Footer/> */}
     </>
   )
 }
